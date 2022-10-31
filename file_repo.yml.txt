@@ -1,0 +1,42 @@
+git init project1   / to create a repo
+cd project1/
+git config --global user.name "hager"
+git config --global user.email "hagersaad329@gmail.com"
+git status
+git add .                 /to add all files
+git commit -m "first comment"      /to make a commit
+git log
+git restore file.yml.txt          /to roll back of changes
+git restore --staged file.yml.txt
+git revert 0ea25e723e1d5522b994ff69e936023f2a3cbe53           / to roll back commit 
+git branch feature1     /to create new branch 
+git branch        /to view branches
+git checkout feature1        /to get into branch
+git branch
+git add 
+git commit -m "this is first commit on feature1"
+git merge feature1        /to marge branch with master
+===========================================================
+git clone https://github.com/hagersaad329/repository.git
+git branch
+git status
+git add file.yml.txt
+git commit -m "this is the test of branch"
+git status
+git log
+git branch
+git push
+git push --set-upstream origin test_remot
+git commit -m "this is the puch change"
+git checkout main
+git add file.yml.txt
+git commit -m "this is the puch change"
+git checkout main
+git pull
+git checkout test_remot
+git merge main
+git add .
+git commit -m "conflix solved"
+git checkout main
+git merge test_remot
+git push
